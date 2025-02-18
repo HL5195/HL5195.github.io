@@ -1,0 +1,17 @@
+
+
+nav ul{
+    display:flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+nav ul li{
+    margin: 10px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic light', 'Arial Narrow', 'Times New Roman', Times, serif, sans-serif;
+}
