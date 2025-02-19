@@ -6,23 +6,41 @@
     <title>Blog</title>
     <link rel="stylesheet" href="common_style.css">
 </head>
-    <body>
-        <article>
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutme.html">About Me</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </nav>
-            </header>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="friends.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="blog">
+        <div class="container">
+            <h1>My Blog</h1>
+            <p>Welcome to my blog! Here are some of my latest thoughts and writings on web development, technology, and more.</p>
             
-            <main>
-                
-            </main>
-        </article>
-
-
-    </body>
+            <article>
+                <h2>Understanding Flexbox and CSS Grid</h2>
+                <p>Flexbox and Grid are two essential layout systems in CSS. Understanding how to use them together can greatly improve your web designs.</p>
+                <a href="#">Read more...</a>
+            </article>
+            
+            <article>
+                <h2>JavaScript Best Practices</h2>
+                <p>Writing clean and efficient JavaScript is key to maintaining scalable applications. Here are some best practices you should follow.</p>
+                <a href="#">Read more...</a>
+            </article>
+        </div>
+    </section>
+    
+    <footer>
+        <h3>Contact Me</h3>
+        <a href="mailto:h19li@siena.edu">Email</a>
+        <a href="https://github.com/HL5195">Github</a>
+    </footer>
+</body>
 </html>

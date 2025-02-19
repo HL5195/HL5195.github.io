@@ -1,17 +1,131 @@
-
-
-nav ul{
-    display:flex;
+body {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e2dbdb, #c2d0e9, #aaabee);
+    color: #3F3D56;
 }
 
-nav ul li{
-    margin: 10px;
-    list-style-type: none;
+header {
+    background-color: #DBE2EF;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-nav ul li a{
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-    font-family: 'Franklin Gothic light', 'Arial Narrow', 'Times New Roman', Times, serif, sans-serif;
+    color: #3F3D56;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #3F72AF;
+    color: #3F72AF;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    height: 50vh;
+    margin: 50px;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #F9F7F7;
+    color: #3F3D56;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.about, .blog, .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 50px;
+    height: 50vh;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 900px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about h1, .blog h1, .gallery h1 {
+    text-align: center;
+    color: #3F72AF;
+}
+
+.about ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.blog article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #E3E7F1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog article:hover {
+    transform: scale(1.02);
+}
+
+.blog article h2 {
+    margin: 0;
+    color: #3F3D56;
+}
+
+.blog article a {
+    display: block;
+    margin-top: 10px;
+    color: #3F72AF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog article a:hover {
+    text-decoration: underline;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #DBE2EF;
+    color: #3F3D56;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 0;
+    width:100vw;
 }
