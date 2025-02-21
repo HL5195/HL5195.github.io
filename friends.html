@@ -5,6 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="common_style.css">
+    <style>
+        .holyGrail{
+            position: relative;
+            top: 10vh;
+            max-width:100vw;
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: rgba(240, 248, 255, 0);
+        }
+
+        #side1,#side2{
+            border: 1px solid rgba(97, 91, 91, 0.938);
+            width: 30vw;
+            margin: 1vw;
+            border-radius: 10px;
+            flex: 20%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            display:flex;
+            flex-direction: column;
+            border: 1px solid rgba(97, 91, 91, 0.938);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+            flex: 60%;
+            margin-top: 10vh;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,13 +55,20 @@
             </ul>
         </nav>
     </header>
-    
-    <section class="gallery">
-        <div class="grid">
-            <img src="image1.jpg" alt="Gallery Image 1">
-            <img src="image2.jpg" alt="Gallery Image 2">
-            <img src="image3.jpg" alt="Gallery Image 3">
-        </div>
+    <section class="holyGrail">
+        <section id="side1">
+            <h2>Okay I am out of pictures...</h2>
+        </section>
+        <section class="gallery container">
+            <div class="grid">
+                <img src="derpyFish.jpeg" alt="Funny Looking Fish" style="width:10vw;">
+                <img src="realDucks.jpeg" alt="Funny Looking Sugar Cookie I made" style="width:10vw;">
+                <img src="derpyCat.jpeg" alt="Funny Cooking Cat" style="width:10vw;">
+            </div>
+        </section>
+        <section id="side2">
+            <h2>Next time...?</h2>
+        </section>
     </section>
     
     <footer>

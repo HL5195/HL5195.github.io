@@ -148,7 +148,7 @@ nav ul li a.active {
 .gallery img {
     width: 100%;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 .gallery img:hover {
@@ -165,4 +165,15 @@ footer {
     position: fixed;
     bottom: 0;
     width:100vw;
+}
+
+footer a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer a:hover{
+    background-color: #3f3d564d;
 }
